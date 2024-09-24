@@ -11,7 +11,7 @@
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="RGB_Slider_Viper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,12 +21,21 @@
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="XpR-RZ-KMO">
                                         <rect key="frame" x="-2" y="0.0" width="342" height="31"/>
+                                        <connections>
+                                            <action selector="onRedValueChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="zgB-bH-nHo"/>
+                                        </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="Dx7-Fk-Nq0">
                                         <rect key="frame" x="-2" y="70" width="342" height="31"/>
+                                        <connections>
+                                            <action selector="onGreenValueChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="yO2-Wy-V99"/>
+                                        </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="S3G-ee-VWL">
                                         <rect key="frame" x="-2" y="140" width="342" height="31"/>
+                                        <connections>
+                                            <action selector="onBlueValueChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="CDk-H7-5BT"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                                 <constraints>
@@ -34,10 +43,10 @@
                                     <constraint firstAttribute="width" constant="338" id="6sh-Qo-3LS"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0z-qH-eSV">
-                                <rect key="frame" x="39" y="551" width="317" height="46"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RGB(0.0, 0.0, 0.0)" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0z-qH-eSV">
+                                <rect key="frame" x="24" y="551" width="345" height="46"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="317" id="fnb-Oq-fOd"/>
+                                    <constraint firstAttribute="width" constant="345" id="fnb-Oq-fOd"/>
                                     <constraint firstAttribute="height" constant="46" id="xqv-Us-IdS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="30"/>
@@ -48,13 +57,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="l0z-qH-eSV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="3Xz-uF-BYx"/>
                             <constraint firstItem="5fW-UN-OBA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ofb-TW-Nme"/>
+                            <constraint firstItem="l0z-qH-eSV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rjb-d0-aHx"/>
                             <constraint firstItem="l0z-qH-eSV" firstAttribute="top" secondItem="5fW-UN-OBA" secondAttribute="bottom" constant="177" id="W0y-07-gWj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l0z-qH-eSV" secondAttribute="trailing" constant="37" id="pEo-KV-LM0"/>
                             <constraint firstItem="5fW-UN-OBA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="145" id="sUQ-vp-soE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lbRgbValue" destination="l0z-qH-eSV" id="HMq-K7-6GI"/>
+                        <outlet property="sliderBlue" destination="S3G-ee-VWL" id="cvr-AM-HOs"/>
+                        <outlet property="sliderGreen" destination="Dx7-Fk-Nq0" id="aHk-gc-mRg"/>
+                        <outlet property="sliderRed" destination="XpR-RZ-KMO" id="m5V-zl-Cul"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
