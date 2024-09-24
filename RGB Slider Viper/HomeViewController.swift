@@ -21,7 +21,15 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let rgb = loadColorValue()
+        
+        sliderRed.value = Float(rgb.0)
+        sliderBlue.value = Float(rgb.1)
+        sliderGreen.value = Float(rgb.2)
+        
+        lbRgbValue.text = "RGB \(rgb.0), \(rgb.1), \(rgb.2)"
+        self.view.backgroundColor = UIColor(red: rgb.0/255, green: rgb.1/255, blue: rgb.2/255, alpha: 1)
     }
 
     @IBAction func onRedValueChange(_ sender: UISlider) {
@@ -38,6 +46,27 @@ class HomeViewController: UIViewController {
         print("Blue value recived \(sender.value)")
         onColorChange()
     }
+    
+    
+    // saving the rgb values
+    func saveCurrentColor(rgb:(CGFloat, CGFloat, CGFloat)) -> (Void){
+        
+        UserDefaults.standard.set(rgb.0, forKey: "Red")
+        UserDefaults.standard.set(rgb.1, forKey: "Green")
+        UserDefaults.standard.set(rgb.2, forKey: "Blue")
+        
+        print("color saving")
+    }
+    
+    // load current color, rgb value will be returned 0-255
+    func loadColorValue() -> (CGFloat, CGFloat, CGFloat){
+        
+        let red = CGFloat(UserDefaults.standard.float(forKey: "Red"))
+        let green = CGFloat(UserDefaults.standard.float(forKey: "Green"))
+        let blue = CGFloat(UserDefaults.standard.float(forKey: "Blue"))
+        
+        return (red, green, blue)
+    }
 }
 
 extension HomeViewController: ColorValueDelegate{
@@ -46,13 +75,15 @@ extension HomeViewController: ColorValueDelegate{
         
         let step: Float = 1
         
-        let red = round(sliderRed.value/step)*step
-        let green = round(sliderGreen.value/step)*step
-        let blue = round(sliderBlue.value/step)*step
+        let red = CGFloat(round(sliderRed.value/step)*step)
+        let green = CGFloat(round(sliderGreen.value/step)*step)
+        let blue = CGFloat(round(sliderBlue.value/step)*step)
         
+        //assiging the values to label and changing the view background color
         lbRgbValue.text = "RGB \(red), \(green), \(blue)"
+        self.view.backgroundColor = UIColor(red: red/255, green: green/255, blue: blue/255, alpha: 1)
         
-        self.view.backgroundColor = UIColor(red: CGFloat(red)/255, green: CGFloat(green)/255, blue: CGFloat(blue)/255, alpha: 1)
+        saveCurrentColor(rgb: (red, green, blue))
     }
 }
 
