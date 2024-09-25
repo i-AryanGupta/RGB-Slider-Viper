@@ -7,19 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B88111E2CA3E2280001E4A4 /* RGBColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B88111D2CA3E2280001E4A4 /* RGBColor.swift */; };
+		2B8811202CA3E3590001E4A4 /* RGBViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B88111F2CA3E3590001E4A4 /* RGBViewProtocol.swift */; };
+		2B8811222CA3E38A0001E4A4 /* RGBInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8811212CA3E38A0001E4A4 /* RGBInteractorProtocol.swift */; };
+		2B8811242CA3E3B60001E4A4 /* RGBPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8811232CA3E3B60001E4A4 /* RGBPresenterProtocol.swift */; };
+		2B8811262CA3E3EA0001E4A4 /* RGBRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8811252CA3E3EA0001E4A4 /* RGBRouterProtocol.swift */; };
+		2B8811282CA3E4270001E4A4 /* RGBInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8811272CA3E4270001E4A4 /* RGBInteractor.swift */; };
+		2B88112A2CA3E4450001E4A4 /* RGBPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8811292CA3E4450001E4A4 /* RGBPresenter.swift */; };
+		2B88112C2CA3E48E0001E4A4 /* RGBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B88112B2CA3E48E0001E4A4 /* RGBViewController.swift */; };
+		2B88112E2CA3E5160001E4A4 /* RGBRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B88112D2CA3E5160001E4A4 /* RGBRouter.swift */; };
 		2BF9E8852CA13FBB009A590B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9E8842CA13FBB009A590B /* AppDelegate.swift */; };
 		2BF9E8872CA13FBB009A590B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9E8862CA13FBB009A590B /* SceneDelegate.swift */; };
-		2BF9E8892CA13FBB009A590B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9E8882CA13FBB009A590B /* HomeViewController.swift */; };
 		2BF9E88C2CA13FBB009A590B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BF9E88A2CA13FBB009A590B /* Main.storyboard */; };
 		2BF9E88E2CA13FC0009A590B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BF9E88D2CA13FC0009A590B /* Assets.xcassets */; };
 		2BF9E8912CA13FC0009A590B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BF9E88F2CA13FC0009A590B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B88111D2CA3E2280001E4A4 /* RGBColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBColor.swift; sourceTree = "<group>"; };
+		2B88111F2CA3E3590001E4A4 /* RGBViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBViewProtocol.swift; sourceTree = "<group>"; };
+		2B8811212CA3E38A0001E4A4 /* RGBInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBInteractorProtocol.swift; sourceTree = "<group>"; };
+		2B8811232CA3E3B60001E4A4 /* RGBPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBPresenterProtocol.swift; sourceTree = "<group>"; };
+		2B8811252CA3E3EA0001E4A4 /* RGBRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBRouterProtocol.swift; sourceTree = "<group>"; };
+		2B8811272CA3E4270001E4A4 /* RGBInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBInteractor.swift; sourceTree = "<group>"; };
+		2B8811292CA3E4450001E4A4 /* RGBPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBPresenter.swift; sourceTree = "<group>"; };
+		2B88112B2CA3E48E0001E4A4 /* RGBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBViewController.swift; sourceTree = "<group>"; };
+		2B88112D2CA3E5160001E4A4 /* RGBRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBRouter.swift; sourceTree = "<group>"; };
 		2BF9E8812CA13FBB009A590B /* RGB Slider Viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RGB Slider Viper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BF9E8842CA13FBB009A590B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BF9E8862CA13FBB009A590B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2BF9E8882CA13FBB009A590B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2BF9E88B2CA13FBB009A590B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BF9E88D2CA13FC0009A590B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BF9E8902CA13FC0009A590B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +53,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B8811172CA3E19D0001E4A4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				2B88111D2CA3E2280001E4A4 /* RGBColor.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		2B8811182CA3E1A90001E4A4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B88111F2CA3E3590001E4A4 /* RGBViewProtocol.swift */,
+				2B88112B2CA3E48E0001E4A4 /* RGBViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B8811192CA3E1B30001E4A4 /* Interacter */ = {
+			isa = PBXGroup;
+			children = (
+				2B8811212CA3E38A0001E4A4 /* RGBInteractorProtocol.swift */,
+				2B8811272CA3E4270001E4A4 /* RGBInteractor.swift */,
+			);
+			path = Interacter;
+			sourceTree = "<group>";
+		};
+		2B88111A2CA3E1C50001E4A4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2B8811232CA3E3B60001E4A4 /* RGBPresenterProtocol.swift */,
+				2B8811292CA3E4450001E4A4 /* RGBPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2B88111B2CA3E1D40001E4A4 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2B8811252CA3E3EA0001E4A4 /* RGBRouterProtocol.swift */,
+				2B88112D2CA3E5160001E4A4 /* RGBRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		2B88111C2CA3E1E80001E4A4 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				2BF9E8842CA13FBB009A590B /* AppDelegate.swift */,
+				2BF9E8862CA13FBB009A590B /* SceneDelegate.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		2BF9E8782CA13FBB009A590B = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +125,12 @@
 		2BF9E8832CA13FBB009A590B /* RGB Slider Viper */ = {
 			isa = PBXGroup;
 			children = (
-				2BF9E8842CA13FBB009A590B /* AppDelegate.swift */,
-				2BF9E8862CA13FBB009A590B /* SceneDelegate.swift */,
-				2BF9E8882CA13FBB009A590B /* HomeViewController.swift */,
+				2B88111C2CA3E1E80001E4A4 /* Resource */,
+				2B88111B2CA3E1D40001E4A4 /* Router */,
+				2B88111A2CA3E1C50001E4A4 /* Presenter */,
+				2B8811192CA3E1B30001E4A4 /* Interacter */,
+				2B8811182CA3E1A90001E4A4 /* View */,
+				2B8811172CA3E19D0001E4A4 /* Entity */,
 				2BF9E88A2CA13FBB009A590B /* Main.storyboard */,
 				2BF9E88D2CA13FC0009A590B /* Assets.xcassets */,
 				2BF9E88F2CA13FC0009A590B /* LaunchScreen.storyboard */,
@@ -138,9 +210,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BF9E8892CA13FBB009A590B /* HomeViewController.swift in Sources */,
+				2B88112C2CA3E48E0001E4A4 /* RGBViewController.swift in Sources */,
+				2B8811262CA3E3EA0001E4A4 /* RGBRouterProtocol.swift in Sources */,
+				2B88111E2CA3E2280001E4A4 /* RGBColor.swift in Sources */,
+				2B8811242CA3E3B60001E4A4 /* RGBPresenterProtocol.swift in Sources */,
+				2B8811202CA3E3590001E4A4 /* RGBViewProtocol.swift in Sources */,
 				2BF9E8852CA13FBB009A590B /* AppDelegate.swift in Sources */,
+				2B88112A2CA3E4450001E4A4 /* RGBPresenter.swift in Sources */,
 				2BF9E8872CA13FBB009A590B /* SceneDelegate.swift in Sources */,
+				2B88112E2CA3E5160001E4A4 /* RGBRouter.swift in Sources */,
+				2B8811282CA3E4270001E4A4 /* RGBInteractor.swift in Sources */,
+				2B8811222CA3E38A0001E4A4 /* RGBInteractorProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="RGB_Slider_Viper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RGBViewController" id="BYZ-38-t0r" customClass="RGBViewController" customModule="RGB_Slider_Viper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,19 +22,19 @@
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="XpR-RZ-KMO">
                                         <rect key="frame" x="-2" y="0.0" width="342" height="31"/>
                                         <connections>
-                                            <action selector="onRedValueChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="zgB-bH-nHo"/>
+                                            <action selector="onRedValueChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="mRZ-uO-DJi"/>
                                         </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="Dx7-Fk-Nq0">
                                         <rect key="frame" x="-2" y="70" width="342" height="31"/>
                                         <connections>
-                                            <action selector="onGreenValueChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="yO2-Wy-V99"/>
+                                            <action selector="onGreenValueChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="bIb-fa-j8v"/>
                                         </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="S3G-ee-VWL">
                                         <rect key="frame" x="-2" y="140" width="342" height="31"/>
                                         <connections>
-                                            <action selector="onBlueValueChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="CDk-H7-5BT"/>
+                                            <action selector="onBlueValueChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="fyM-6u-Sjm"/>
                                         </connections>
                                     </slider>
                                 </subviews>
@@ -64,10 +64,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="lbRgbValue" destination="l0z-qH-eSV" id="HMq-K7-6GI"/>
-                        <outlet property="sliderBlue" destination="S3G-ee-VWL" id="cvr-AM-HOs"/>
-                        <outlet property="sliderGreen" destination="Dx7-Fk-Nq0" id="aHk-gc-mRg"/>
-                        <outlet property="sliderRed" destination="XpR-RZ-KMO" id="m5V-zl-Cul"/>
+                        <outlet property="lbRgbValue" destination="l0z-qH-eSV" id="Biv-qW-M30"/>
+                        <outlet property="sliderBlue" destination="S3G-ee-VWL" id="ipN-cp-0oN"/>
+                        <outlet property="sliderGreen" destination="Dx7-Fk-Nq0" id="IVs-Uf-iw0"/>
+                        <outlet property="sliderRed" destination="XpR-RZ-KMO" id="P7X-tg-UeX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
