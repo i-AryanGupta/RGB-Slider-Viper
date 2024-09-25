@@ -13,7 +13,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        
+                let window = UIWindow(windowScene: windowScene)
+                
+                // Use RGBRouter to create the initial view controller
+                let rootVC = RGBRouter.createModule()
+
+                // Set the root view controller and make the window visible
+                window.rootViewController = rootVC
+                self.window = window
+                window.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
